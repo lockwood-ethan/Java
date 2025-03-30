@@ -53,6 +53,7 @@ public class Hello {
         boolean isItZero = remainder == 0 ? true : false;
         if (!isItZero) {
             System.out.print("got some remainder");
+            System.out.print("Will this push to Github?");
         }
 
     } 

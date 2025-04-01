@@ -2,19 +2,9 @@ public class IfKeywordAndCodeBlocks {
     
     public static void main(String[] args) {
 
-        boolean gameOver;
-        int score;
-        int levelCompleted;
-        int bonus;
-
         calculateScore(true, 800, 5, 100);
-
-        gameOver = true;
-        score = 10000;
-        levelCompleted = 8;
-        bonus = 200;
         
-        calculateScore(gameOver, score, levelCompleted, bonus);
+        calculateScore(true, 10000, 8, 200);
     }
 
     public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
@@ -23,6 +13,7 @@ public class IfKeywordAndCodeBlocks {
 
         if (gameOver == true) {
             finalScore += (levelCompleted * bonus);
+            finalScore += 1000;
             System.out.println("Your final score was " + finalScore);
         }
     }

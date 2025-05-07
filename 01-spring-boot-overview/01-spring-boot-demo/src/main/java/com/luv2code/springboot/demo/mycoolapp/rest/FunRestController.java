@@ -16,12 +16,6 @@ public class FunRestController {
     // expose a "/" that returns "Hello World"
     @GetMapping("/")
     public String sayHello() {
-        return "Hello World! The coach of the team is: " + coachName + " The name of the team is: " + teamName;
-    }
-
-    // expose a new endpoint for "workout"
-    @GetMapping("/workout")
-    public String getDailyWorkout() {
-        return "Run a hard 5k!";
+        return "Hello World! The coach of the team is: " + coachName + " and the name of the team is: " + teamName;
     }
 }

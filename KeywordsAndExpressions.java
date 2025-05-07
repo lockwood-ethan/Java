@@ -14,6 +14,8 @@ public class KeywordsAndExpressions {
         if ((health < 25) && (highScore > 1000)){
             highScore = highScore - 1000;
         }
+
+        System.out.println(kilometers);
     }
     
 }

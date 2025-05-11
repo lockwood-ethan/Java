@@ -14,7 +14,7 @@ public class DemoController {
 
     // use the @Qualifier annotation to specify which Coach class should be used
     @Autowired
-    public DemoController(@Qualifier("cricketCoach") Coach theCoach) {
+    public DemoController(@Qualifier("baseballCoach") Coach theCoach) {
         myCoach = theCoach;
     }
 
